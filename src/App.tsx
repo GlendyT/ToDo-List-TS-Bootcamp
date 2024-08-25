@@ -1,7 +1,17 @@
+import ToDoForm from "./components/ToDoForm";
+import ToDoList from "./components/ToDoList";
+
 function App() {
   return (
     <>
-      <p className="text-green-500 text-7xl">TODO LIST</p>
+      <div className="min-h-screen w-full bg-universe bg-cover bg-center bg-no-repeat flex flex-col ">
+        <div className="flex-1">
+          <ToDoList />
+        </div>
+        <div className="sticky bottom-0 ">
+          <ToDoForm />
+        </div>
+      </div>
     </>
   );
 }
